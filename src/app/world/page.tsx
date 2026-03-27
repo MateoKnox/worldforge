@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { FACTIONS, RECENT_EVENTS } from "@/lib/mockData";
-import { Map, Users, Sword, X, Flag } from "lucide-react";
+import { Map as MapIcon, Users, Sword, X, Flag } from "lucide-react";
 
 // Hex grid constants
 const HEX_SIZE = 22;
@@ -202,7 +202,7 @@ export default function WorldPage() {
         <aside className="w-72 flex-shrink-0 glass border-r border-[rgba(212,160,23,0.1)] overflow-y-auto flex flex-col">
           <div className="p-4 border-b border-[rgba(212,160,23,0.1)]">
             <h2 className="font-display text-sm font-bold text-[#d4a017] tracking-widest flex items-center gap-2">
-              <Map size={14} /> WORLD MAP
+              <MapIcon size={14} /> WORLD MAP
             </h2>
           </div>
 
