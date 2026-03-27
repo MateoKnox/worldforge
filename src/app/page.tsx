@@ -4,7 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { FACTIONS, RECENT_EVENTS, STATS } from "@/lib/mockData";
-import { Map, Users, BookOpen, Sword, Shield, Star, Github, ArrowRight, Zap } from "lucide-react";
+import { Map, Users, BookOpen, Sword, Shield, Star, ExternalLink, ArrowRight, Zap } from "lucide-react";
 
 function StarField() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -95,7 +95,7 @@ export default function Home() {
               <Map size={16} /> Enter the World
             </Button>
             <Button href="https://github.com/MateoKnox/worldforge" variant="ghost">
-              <Github size={16} /> Open Source
+              <ExternalLink size={16} /> Open Source
             </Button>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function Home() {
         <p className="font-display tracking-widest text-[#d4a017] mb-2">⚔ WORLDFORGE</p>
         <p>Open source · Community driven · Always evolving</p>
         <a href="https://github.com/MateoKnox/worldforge" className="hover:text-[#d4a017] transition-colors mt-2 inline-block">
-          <Github size={16} className="inline mr-1" /> github.com/MateoKnox/worldforge
+          <ExternalLink size={16} className="inline mr-1" /> github.com/MateoKnox/worldforge
         </a>
       </footer>
     </main>

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Map, Users, Trophy, BookOpen, Github, Menu, X } from "lucide-react";
+import { Map, Users, Trophy, BookOpen, ExternalLink, Menu, X } from "lucide-react";
 
 const links = [
   { label: "World Map", href: "/world", icon: Map },
@@ -35,7 +35,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <a href="https://github.com/MateoKnox/worldforge" target="_blank" rel="noreferrer"
             className="flex items-center gap-2 px-4 py-2 text-sm text-[#a09880] hover:text-white transition-colors">
-            <Github size={16} /> GitHub
+            <ExternalLink size={16} /> GitHub
           </a>
           <a href="/world"
             className="px-5 py-2 bg-[#d4a017] text-black text-sm font-semibold rounded-lg hover:bg-[#f0c040] transition-all font-display tracking-wide glow-gold">
